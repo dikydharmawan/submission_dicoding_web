@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tugas Akhir Belajar Membuat Front-End Web untuk Pemula - Liverpool FC Fan Page"
+    />
+    <title>Liverpool FC - Fan Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>LIVERPOOL FC</h1>
+        <p>
+          Klub sepak bola profesional Inggris yang bermarkas di kota Merseyside
+        </p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#Sejarah">Sejarah</a></li>
+          <li><a href="#Prestasi">Prestasi</a></li>
+          <li><a href="#Pemain">Pemain</a></li>
+          <li>
+            <a
+              href="https://www.dicoding.com/users/ahmad_diky_dharmawan/academies"
+              target="_blank"
+              >Profil</a
+            >
+          </li>
+          <li id="switch" onclick="switch_mode()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <article id="Sejarah" class="card reveal">
+          <h2>Sejarah</h2>
+          <img
+            src="assets/sejarah.jpg"
+            class="feature-image"
+            alt="Stadion Anfield Liverpool"
+          />
+          <section>
+            <p>
+              Liverpool Football Club didirikan pada tahun 1892 setelah
+              perselisihan antara Everton Football Club dan John Houlding selaku
+              pemilik lahan Anfield. Perpecahan ini memaksa Everton pindah ke
+              Goodison Park, sementara Houlding membentuk Liverpool FC untuk
+              mengisi kekosongan di Anfield.
+            </p>
+            <p>
+              Di bawah asuhan manajer legendaris Bill Shankly pada tahun
+              1960-an, klub ini bertransformasi dari tim divisi dua menjadi
+              kekuatan yang ditakuti. Shankly tidak hanya membawa kesuksesan di
+              lapangan, tetapi juga menciptakan identitas kuat melalui filosofi
+              The Boot Room dan mengubah warna seragam menjadi merah seluruhnya
+              untuk memberikan kesan psikologis yang lebih tangguh kepada lawan.
+            </p>
+            <p>
+              Memasuki era terbaru, Jurgen Klopp berhasil mengakhiri penantian
+              30 tahun untuk gelar Liga Premier pada tahun 2020. Kini, setelah
+              transisi kepemimpinan ke era Arne Slot, Liverpool terus berusaha
+              mempertahankan posisinya sebagai kekuatan dominan di kancah sepak
+              bola dunia dengan tetap memegang teguh warisan sejarah dan tradisi
+              mereka.
+            </p>
+          </section>
+        </article>
+
+        <article id="Prestasi" class="card reveal">
+          <h2>Prestasi</h2>
+          <img
+            src="assets/juara.jpg"
+            class="feature-image"
+            alt="Liverpool Champions Trophy"
+          />
+          <section>
+            <h3>Daftar Prestasi Utama</h3>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>TINGKAT</th>
+                    <th>KOMPETISI</th>
+                    <th>JUARA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>LOKAL</td>
+                    <td>Premier League</td>
+                    <td>20 Kali</td>
+                  </tr>
+                  <tr>
+                    <td>LOKAL</td>
+                    <td>Piala FA</td>
+                    <td>8 Kali</td>
+                  </tr>
+                  <tr>
+                    <td>LOKAL</td>
+                    <td>Piala EFL (Carabao Cup)</td>
+                    <td>10 Kali</td>
+                  </tr>
+                  <tr>
+                    <td>EROPA</td>
+                    <td>Liga Champions UEFA</td>
+                    <td>6 Kali</td>
+                  </tr>
+                  <tr>
+                    <td>DUNIA</td>
+                    <td>Piala Dunia Antarklub FIFA</td>
+                    <td>2019</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </article>
+
+        <article id="Pemain" class="card reveal">
+          <h2>Skuad Utama 2025/2026</h2>
+          <img
+            src="assets/pemain.jpg"
+            class="feature-image"
+            alt="Liverpool Squad"
+          />
+          <section>
+            <h3>Daftar Pemain</h3>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Pos</th>
+                    <th>Nama Pemain</th>
+                    <th>Negara</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>GK</td>
+                    <td>Alisson Becker</td>
+                    <td>Brasil</td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>GK</td>
+                    <td>Giorgi Mamardashvili</td>
+                    <td>Georgia</td>
+                  </tr>
+                  <tr>
+                    <td>62</td>
+                    <td>GK</td>
+                    <td>Caoimhin Kelleher</td>
+                    <td>Irlandia</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>DF</td>
+                    <td>Virgil van Dijk (C)</td>
+                    <td>Belanda</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>DF</td>
+                    <td>Ibrahima Konaté</td>
+                    <td>Prancis</td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>DF</td>
+                    <td>Andy Robertson</td>
+                    <td>Skotlandia</td>
+                  </tr>
+                  <tr>
+                    <td>66</td>
+                    <td>DF</td>
+                    <td>Trent Alexander-Arnold</td>
+                    <td>Inggris</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>DF</td>
+                    <td>Joe Gomez</td>
+                    <td>Inggris</td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>DF</td>
+                    <td>Kostas Tsimikas</td>
+                    <td>Yunani</td>
+                  </tr>
+                  <tr>
+                    <td>78</td>
+                    <td>DF</td>
+                    <td>Jarell Quansah</td>
+                    <td>Inggris</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>MF</td>
+                    <td>Alexis Mac Allister</td>
+                    <td>Argentina</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>MF</td>
+                    <td>Dominik Szoboszlai</td>
+                    <td>Hungaria</td>
+                  </tr>
+                  <tr>
+                    <td>38</td>
+                    <td>MF</td>
+                    <td>Ryan Gravenberch</td>
+                    <td>Belanda</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>MF</td>
+                    <td>Curtis Jones</td>
+                    <td>Inggris</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>MF</td>
+                    <td>Harvey Elliott</td>
+                    <td>Inggris</td>
+                  </tr>
+                  <tr>
+                    <td>31</td>
+                    <td>MF</td>
+                    <td>Wataru Endo</td>
+                    <td>Jepang</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>FW</td>
+                    <td>Mohamed Salah</td>
+                    <td>Mesir</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>FW</td>
+                    <td>Luis Díaz</td>
+                    <td>Kolombia</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>FW</td>
+                    <td>Darwin Núñez</td>
+                    <td>Uruguay</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>FW</td>
+                    <td>Cody Gakpo</td>
+                    <td>Belanda</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>FW</td>
+                    <td>Diogo Jota</td>
+                    <td>Portugal</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>FW</td>
+                    <td>Federico Chiesa</td>
+                    <td>Italia</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><strong>Manager:</strong> Arne Slot</p>
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article class="card reveal">
+          <header>
+            <h2>LIVERPOOL FC</h2>
+            <p>YOU'LL NEVER WALK ALONE</p>
+            <figure>
+              <img src="assets/lambang.png" alt="Logo Liverpool FC" />
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Klub</h3>
+            <table class="sidebar-info-table">
+              <tr>
+                <th>Lengkap</th>
+                <td>Liverpool Football Club</td>
+              </tr>
+              <tr>
+                <th>Julukan</th>
+                <td>The Reds</td>
+              </tr>
+              <tr>
+                <th>Manager</th>
+                <td>Arne Slot</td>
+              </tr>
+              <tr>
+                <th>Stadion</th>
+                <td>Anfield</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+
+        <article class="card bio-card reveal">
+          <h2>Biodata Penulis</h2>
+          <section>
+            <img src="assets/profile.jpeg" alt="Foto Profil" />
+            <div class="bio-info">
+              <table class="sidebar-info-table">
+                <tr>
+                  <th>Nama</th>
+                  <td>Ahmad Diky Dharmawan</td>
+                </tr>
+                <tr>
+                  <th>Domisili</th>
+                  <td>Banyuwangi</td>
+                </tr>
+                <tr>
+                  <th>Profil</th>
+                  <td>
+                    <a
+                      href="https://www.dicoding.com/users/ahmad_diky_dharmawan/academies"
+                      target="_blank"
+                      >Klik Disini</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Diky Dharmawan | Tugas Akhir Dicoding</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
